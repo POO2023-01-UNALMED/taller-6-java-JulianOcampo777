@@ -23,14 +23,29 @@ public class Vehiculo {
 		this.fabricante=fabricante;
 		
 		
+		if(Pais.ventasPorPais.containsKey(fabricante.getPais())) {
+			Pais.ventasPorPais.put(fabricante.getPais(), Pais.ventasPorPais.get(fabricante.getPais()) + 1);
+		} else {
+			Pais.ventasPorPais.put(fabricante.getPais(), 1);
+		}
+		
+		
+		
+		
+		
+		
+		if(Fabricante.ventasPorFabrica.containsKey(fabricante)) {
+			Fabricante.ventasPorFabrica.put(fabricante, Fabricante.ventasPorFabrica.get(fabricante) + 1);
+		} else {
+			Fabricante.ventasPorFabrica.put(fabricante, 1);
+		}
+		
 		cantidadVehiculos++;
 		
 		//setCantidadVehiculos(getCantidadVehiculos() + 1);
 	}
 	
 
-	
-	
 	public String getPlaca() {
 		return placa;
 	}
