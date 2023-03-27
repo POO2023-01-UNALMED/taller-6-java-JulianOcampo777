@@ -16,10 +16,10 @@ public class Pais {
 		Pais paisMasVendedor=null;
 		
 		for(Entry<Pais, Integer>Entry:ventasPorPais.entrySet()) {
-			final int valorActual = Entry.getValue();
+			final int valorActual = entry.getValue();
 			if (valorActual>valorMax) {
 				valorMax=valorActual;
-				paisMasVendedor=Entry.getKey();
+				paisMasVendedor=entry.getKey();
 				
 			}
 		}

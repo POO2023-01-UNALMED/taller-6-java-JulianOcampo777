@@ -22,10 +22,10 @@ public class Fabricante {
 		Fabricante fabricaMayorVentas=null;
 		
 		for(Entry<Fabricante, Integer >Entry:ventasPorFabrica.entrySet()) {
-			final int valorActual = Entry.getValue();
+			final int valorActual = entry.getValue();
 			if (valorActual>valorMax) {
 				valorMax=valorActual;
-				fabricaMayorVentas=Entry.getKey();
+				fabricaMayorVentas=entry.getKey();
 				
 			}
 		}
