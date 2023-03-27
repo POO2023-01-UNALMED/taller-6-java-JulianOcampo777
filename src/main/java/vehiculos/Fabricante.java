@@ -17,6 +17,23 @@ public class Fabricante {
 		this.pais=pais;
 	}
 	
+	public static Fabricante fabricaMayorVentas() {
+		int valorMax=-1;
+		Fabricante fabricaMayorVentas=null;
+		
+		for(Entry<Fabricante, Integer >Entry:ventasPorFabrica.entrySet()) {
+			final int valorActual = Entry.getValue();
+			if (valorActual>valorMax) {
+				valorMax=valorActual;
+				fabricaMayorVentas=Entry.getKey();
+				
+			}
+		}
+		return fabricaMayorVentas;
+	}
+
+		
+	
 	
 	public Pais getPais() {
 		return pais;

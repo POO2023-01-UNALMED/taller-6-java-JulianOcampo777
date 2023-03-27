@@ -9,17 +9,17 @@ public class Pais {
 	
 	
 	
-	static Map<Pais, Integer >ventasPorPais = new HashMap <Pais, Integer>();
+	static Map<Pais, Integer>ventasPorPais = new HashMap <Pais, Integer>();
 	public static Pais paisMasVendedor() {
 		
 		int valorMax=-1;
 		Pais paisMasVendedor=null;
 		
-		for(Entry<Pais, Integer >Entry:ventasPorPais.entrySet()) {
-			final int valorActual = entry.getValue();
+		for(Entry<Pais, Integer>Entry:ventasPorPais.entrySet()) {
+			final int valorActual = Entry.getValue();
 			if (valorActual>valorMax) {
 				valorMax=valorActual;
-				paisMasVendedor=entry.getKey();
+				paisMasVendedor=Entry.getKey();
 				
 			}
 		}
