@@ -7,7 +7,7 @@ public class Camioneta extends Vehiculo {
 		super(placa, puertas, 90, nombre, precio, peso, "4X4", fabricante);
 		// TODO Auto-generated constructor stub
 		this.volco=volco;
-		cantidadCamionetas++;
+		Camioneta.cantidadCamionetas++;
 	}
 	public boolean isVolco() {
 		return volco;

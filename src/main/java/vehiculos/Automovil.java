@@ -9,7 +9,7 @@ public class Automovil extends Vehiculo {
 		super(placa, 4, 100, nombre, precio, peso, "FWD", fabricante);
 		// TODO Auto-generated constructor stub
 		this.puestos=puestos;
-		cantidadAutomoviles++;
+		Automovil.cantidadAutomoviles++;
 	}
 
 	public int getPuestos() {

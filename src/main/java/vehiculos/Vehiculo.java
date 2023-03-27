@@ -23,9 +23,9 @@ public class Vehiculo {
 		this.fabricante=fabricante;
 		
 		
+		cantidadVehiculos++;
 		
-		
-		setCantidadVehiculos(getCantidadVehiculos() + 1);
+		//setCantidadVehiculos(getCantidadVehiculos() + 1);
 	}
 	
 
